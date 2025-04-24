@@ -7,14 +7,14 @@ struct LocationsView: View {
             LittleLemonLogo() // 1
                 .padding(.top, 50)
             
-            LittleLemonLogo() // 2
+            EmptyView() // 2
             .padding([.leading, .trailing], 40)
             .padding([.top, .bottom], 8)
             .background(Color.gray.opacity(0.2))
             .cornerRadius(20)
             
             NavigationView {
-                LittleLemonLogo() // 3
+                EmptyView() // 3
                 .navigationBarTitle("")
                 .navigationBarHidden(true)
             }
