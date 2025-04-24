@@ -2,7 +2,10 @@ import SwiftUI
 
 struct LittleLemonLogo: View {
     var body: some View {
-        EmptyView()
+        Image("littleLemon")
+            .resizable()
+            .scaledToFit()
+            .frame(height: 100)
     }
 }
 
