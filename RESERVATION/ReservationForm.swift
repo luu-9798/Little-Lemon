@@ -153,6 +153,13 @@ struct ReservationForm: View {
             }
             
             // add an alert after this line
+            .alert(isPresented: $showFormInvalidMessage ) {
+                Alert(
+                    title: Text("Form error"),
+                    message: Text(errorMessage),
+                    dismissButton: .default(Text("Ok"))
+                )
+            }
             
         }
         .onAppear {
