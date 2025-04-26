@@ -29,7 +29,7 @@ class Model:ObservableObject {
   
   @Published var displayTabBar = true
   @Published var tabBarChanged = false
-  @Published var tabViewSelectedIndex = Int.max {
+  @Published var tabViewSelectedIndex = 0{
     didSet {
       tabBarChanged = true
     }
