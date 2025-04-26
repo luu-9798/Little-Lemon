@@ -184,7 +184,7 @@ struct ReservationForm: View {
             }
             
             var invalidPhoneMessage = ""
-            if customerEmail.isEmpty {
+            if customerPhoneNumber.trimmingCharacters(in: .whitespaces).isEmpty {
                 invalidPhoneMessage = "The phone number cannot be blank.\n\n"
             }
             
