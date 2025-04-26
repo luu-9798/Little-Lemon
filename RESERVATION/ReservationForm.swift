@@ -189,7 +189,7 @@ struct ReservationForm: View {
             }
             
             var invalidEmailMessage = ""
-            if !customerEmail.isEmpty || !isValid(email: customerEmail) {
+            if customerEmail.trimmingCharacters(in: .whitespaces).isEmpty || !isValid(email: customerEmail) {
                 invalidEmailMessage = "The e-mail is invalid and cannot be blank."
             }
             
